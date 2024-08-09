@@ -38,6 +38,7 @@ timeouts:
   update_minutes: 20
   delete_minutes: 20
 async:
+  actions: ['create', 'delete', 'update']
   type: 'OpAsync'
   operation:
     base_url: 'projects/{{project}}/regions/{{region}}/operations/{{op_id}}'
@@ -190,6 +191,7 @@ properties:
         api_name: internalIPs
         key_name: 'interface_name'
         value_type:
+          name: internalIp
           type: NestedObject
           properties:
             - name: 'autoDelete'
@@ -219,6 +221,7 @@ properties:
         api_name: externalIPs
         key_name: 'interface_name'
         value_type:
+          name: externalIp
           type: NestedObject
           properties:
             - name: 'autoDelete'
