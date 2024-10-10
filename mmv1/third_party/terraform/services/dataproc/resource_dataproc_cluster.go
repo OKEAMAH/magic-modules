@@ -2177,6 +2177,7 @@ func expandGceClusterConfig(d *schema.ResourceData, config *transport_tpg.Config
 	}
 	if v, ok := cfg["internal_ip_only"]; ok {
 		conf.InternalIpOnly = v.(bool)
+		conf.ForceSendFields = append(conf.ForceSendFields, "InternalIpOnly")
 	}
 	if v, ok := cfg["metadata"]; ok {
 		conf.Metadata = tpgresource.ConvertStringMap(v.(map[string]interface{}))
@@ -2891,6 +2892,9 @@ func flattenSecurityConfig(d *schema.ResourceData, sc *dataproc.SecurityConfig) 
 }
 
 func flattenKerberosConfig(d *schema.ResourceData, kfg *dataproc.KerberosConfig) []map[string]interface{} {
+	if kfg == nil {
+		return nil
+	}
 	data := map[string]interface{}{
 		"enable_kerberos":                       kfg.EnableKerberos,
 		"root_principal_password_uri":           kfg.RootPrincipalPasswordUri,

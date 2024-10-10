@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	bitbucket.org/creachadair/stringset v0.0.11
-	github.com/GoogleCloudPlatform/declarative-resource-client-library v1.71.0
+	github.com/GoogleCloudPlatform/declarative-resource-client-library v1.74.0
 	github.com/golang/glog v1.1.2
 	github.com/kylelemons/godebug v1.1.0
 	github.com/nasa9084/go-openapi v0.0.0-20210722142352-4a81d737faf6

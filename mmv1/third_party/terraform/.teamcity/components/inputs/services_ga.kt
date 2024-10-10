@@ -311,6 +311,11 @@ var ServicesListGa = mapOf(
         "displayName" to "Deploymentmanager",
         "path" to "./google/services/deploymentmanager"
     ),
+    "developerconnect" to mapOf(
+        "name" to "developerconnect",
+        "displayName" to "Developerconnect",
+        "path" to "./google/services/developerconnect"
+    ),
     "dialogflow" to mapOf(
         "name" to "dialogflow",
         "displayName" to "Dialogflow",
@@ -486,6 +491,11 @@ var ServicesListGa = mapOf(
         "displayName" to "Memcache",
         "path" to "./google/services/memcache"
     ),
+    "memorystore" to mapOf(
+        "name" to "memorystore",
+        "displayName" to "Memorystore",
+        "path" to "./google/services/memorystore"
+    ),
     "migrationcenter" to mapOf(
         "name" to "migrationcenter",
         "displayName" to "Migrationcenter",
@@ -530,6 +540,11 @@ var ServicesListGa = mapOf(
         "name" to "notebooks",
         "displayName" to "Notebooks",
         "path" to "./google/services/notebooks"
+    ),
+    "oracledatabase" to mapOf(
+        "name" to "oracledatabase",
+        "displayName" to "OracleDatabase",
+        "path" to "./google/services/oracledatabase"
     ),
     "orgpolicy" to mapOf(
         "name" to "orgpolicy",
@@ -600,6 +615,11 @@ var ServicesListGa = mapOf(
         "name" to "secretmanager",
         "displayName" to "Secretmanager",
         "path" to "./google/services/secretmanager"
+    ),
+    "secretmanagerregional" to mapOf(
+        "name" to "secretmanagerregional",
+        "displayName" to "Secretmanagerregional",
+        "path" to "./google/services/secretmanagerregional"
     ),
     "securesourcemanager" to mapOf(
         "name" to "securesourcemanager",
